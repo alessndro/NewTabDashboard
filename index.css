@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+}    
+
+body {
+    margin: 0;
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    text-shadow: 0px 0px 20px #242424;
+    font-size: 0.9rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+main {
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 93%;
+    /* position: relative; */
+}
+
+
+
+/*  TOP ROW */
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    padding:0;
+    height: 20vh;
+}
+
+/* TOP ROW - links */
+.top-links {
+    align-self: start;
+}
+
+.trello-div {
+    margin: 0;
+    padding: 0.3em 0;
+    text-shadow: 0px 0px 20px #242424;
+    text-align: center;
+    overflow-y:auto;
+}
+
+.trello-item {
+    padding: 0.5em 1;
+    margin: 0.5em 0;
+    border-radius: 0.5em;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TOP ROW - Pomodoro Timer */
+.top-row p,
+.top-row .top-timer {
+    margin: 0;
+}
+
+.top-timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.top-timer img {
+    min-height: 100px;
+}
+
+.btn {
+    padding: 0.5em 1em;
+    display: inline-block;
+    border:none;
+    color: white;
+    background-color: transparent;
+    text-shadow: 0px 0px 20px #242424;
+    font-size: 0.8rem;
+    cursor: pointer
+}
+
+/* MIDDLE DIV */
+.middle-div {
+    height: 20vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5rem
+}
+
+
+/* BOTTOM DIV */
+
+.bottom-div {
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    outline:none;
+    user-select: none;
+}
+
+.intro-bottom-stats p {
+    margin: 0;
+}
+
+.bottom-stats ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-stats li {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bottom-stats img {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5em
+}
+
+.bottom-stats li p {
+    margin: 0.4em 0;
+}
+
+.bottom-list p {
+    margin: 0;
+}
+.to-do-list {
+    text-align: center;
+    height: 100%;
+    position: relative;
+    width: 200px;
+    user-select: none;
+}
+
+.to-do-list p {
+    margin:  0px;
+}
+.to-do-list-ul ul {
+    list-style: none;
+    height: 100%;
+    padding: 0px;
+    text-align: start;
+    overflow-x: auto; /* Add a horizontal scrollbar when content exceeds the width */
+    white-space: nowrap;
+    width: 200px;
+    user-select: none;
+}
+
+.to-do-list-ul ul label {
+    margin-left: 0.4em;
+    font-size: 0.8rem;
+}
+
+.to-do-list-ul li {
+    display: flex;
+    align-items: center;
+    margin: 0.3em 0px;
+}
+.to-do-list-input {
+    position:absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.to-do-list-input input {
+    width: 100%;
+    opacity: 1;
+    color: white;
+    text-decoration: none;
+    outline: none;
+    text-shadow: 0px 0px 20px #242424;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 1rem;
+}
+
+#to-do-list {
+    overflow: auto;
+    margin: 0;
+    user-select: none;
+}
+
+
+#list-add-btn,
+#close-to-do {
+    margin-top: 0.2em;
+    padding: 0.2em 1em;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.0);
+    text-shadow: 0px 0px 20px #242424;
+    color: white;
+}
+
+.margin-right {
+    margin-right: 0.5em;
+}
+
+.listitem {
+    color: white;
+}
+
+/*  UTILITY */
+.hidden {
+    display: none;
+}
+
+
+@media screen and (min-width: 1440px) {
+    
+    body {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+    }
+
+    .to-do-list-ul ul label {
+        font-size: 1rem
+    }
+
+    .to-do-list-ul ul {
+        height: 200px;
+        width: 300px;
+    }
+
+    .to-do-list {
+        height: 300px;
+        width: 300px;
+    }
+
+    .bottom-stats img {
+        width: 30px;
+        height: 30px;
+        margin: 0.5em 0.3em 0 0;
+    }
+}

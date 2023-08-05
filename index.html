@@ -1,0 +1,62 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="index.css">
+        <title>Personal Dashboard</title>
+        <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main id="main"> 
+            <div class="top-div">
+                <div class="top-row">
+                    <div id="top-links" class="top-links">
+                        <p id="top-links">Trello</p>
+                    </div>
+                    <div class="trello-div hidden" id="trello-div-el">
+                        <p id="current-date-trello">Trello Monday📅</p>
+                        <div id="inner-trello">
+                        </div>
+                    </div>
+                    <div id="top-timer" class="top-timer">
+                        <p>Pomodoro Timer</p>
+                        <div class="button-wrapper-timer">
+                            <button id="start-btn" class="start-btn btn">Start</button> 
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="middle-div">
+                <h1 id="middle-current-time">00:00</h1>
+            </div>
+            <div id="bottom-db" class="bottom-div">
+                <div id="stats-div" class="bottom-stats hidden">
+                    <ul>
+                        <li><img src='images/trophy.png'><p id="to-do-stats">0</p></li>
+                        <li><img src='images/pomodoro.png'><p id="pomodoro-stats">0</p></li>
+                    </ul>
+                </div>
+                <div class="intro-bottom-stats">
+                    <p id="show-stats">stats</p>
+                </div>
+                <div class="bottom-list">
+                    <p id="show-to-do">To do</p>
+                </div>
+                <div id="to-do-list-el" class="to-do-list hidden">
+                    <div class="to-do-list-ul">
+                        <ul id="to-do-list">
+                        </ul>
+                    </div>
+                    <div class="to-do-list-input">
+                        <input id="list-item" name="list-item" type="text"></input>
+                        <button id="list-add-btn">add</button>
+                        <button id="close-to-do">close</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
